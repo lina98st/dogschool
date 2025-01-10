@@ -1,0 +1,114 @@
+@charset "UTF-8";
+body {
+  padding: 0;
+  margin: 0;
+  background-color: hsl(43, 87%, 64%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin-left: 5rem;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  font-size: 1rem;
+}
+
+nav {
+  background-color: #3498db;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-links li a:hover {
+  color: #f1c40f;
+}
+
+main {
+  margin: 2rem;
+}
+
+.black-dog-picture,
+.puppy-green {
+  border-radius: 6rem;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+.purple-dog {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.green-dog {
+  margin: 10px;
+}
+
+.wrapper {
+  max-width: 1200px; /* Begrenze die Breite, z. B. auf 1200px */
+  margin: 0 auto; /* Zentriert den Wrapper */
+  padding: 0 20px; /* Optional: Innenabstand für kleinere Bildschirme */
+}
+
+footer {
+  background-color: #ba1cc6;
+  color: #ffffff;
+  padding: 2rem;
+  font-size: 1rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .form-container {
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog school</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Courses</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="main-dog-content" role="main">
+<h1>Your dogs best friend</h1>
+<div class="purple-dog">
+<figure>
+<img src="img/black-dog-purple.png" alt="Cute black dog" class="black-dog-picture" width="350" height="500">
+</figure>
+</div>
+<div class="wrapper">
+<p>
+Herzlich willkommen bei [Name Ihrer Hundeschule]! Wir freuen uns, dass Sie und Ihr Hund den ersten Schritt zu einer starken Partnerschaft machen. Ob Welpentraining, Erziehungskurse oder individuelles Coaching – bei uns stehen Sie und Ihr Hund im Mittelpunkt.
+Unser Ziel ist es, ein harmonisches Zusammenleben zwischen Mensch und Hund zu fördern. Mit Geduld, Empathie und modernen Trainingsmethoden begleiten wir Sie auf dem Weg zu einem gut erzogenen und glücklichen Hund.
+Entdecken Sie unser vielfältiges Kursangebot und lassen Sie uns gemeinsam an einer vertrauensvollen Beziehung arbeiten. Wir freuen uns darauf, Sie und Ihren Vierbeiner kennenzulernen!
+</p>
+</div>
+<div class="green-dog">
+<figure>
+<img src="img/puppy-green.png" alt="Cute puppy" class="puppy-green" width="500" height="350">
+</figure>
+</div>
+<div class="form-container">
+    <h1>Kontaktformular</h1>
+    <form action="/submit" method="POST" aria-labelledby="form-title">
+        <div>
+            <label for="name">Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required aria-required="true">
+        </div>
+
+        <div>
+            <label for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required aria-required="true">
+        </div>
+
+        <div>
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone" name="phone" aria-describedby="phone-note">
+            <small id="phone-note">Optional, falls wir Sie telefonisch kontaktieren sollen.</small>
+        </div>
+
+        <div>
+            <label for="kurs">Kursauswahl</label>
+            <select id="kurs" name="kurs">
+                <option value="welpenkurs">Welpentraining</option>
+                <option value="grundkurs">Grundkurs</option>
+                <option value="agility">Agility-Training</option>
+                <option value="privat">Privattraining</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht..." aria-describedby="message-note"></textarea>
+            <small id="message-note">Optional, falls Sie uns weitere Informationen geben möchten.</small>
+        </div>
+
+        <button type="submit">Absenden</button>
+    </form>
+</div>
+    </main>
+    <footer>
+        All rights reserved. 2025.
+    </footer>
+</body>
+</html>

@@ -3,11 +3,22 @@ $text-color: #ffffff;    // Weiß
 $accent-color: #f1c40f;  // Gelb
 $secondary-color: #ba1cc6; // Lila
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: hsl(43, 87%, 64%);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .form-container {
@@ -20,6 +31,7 @@ body {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
 margin-left: 5rem;
+margin-bottom: 3.5rem;
 text-align: center;
 }
 
@@ -41,19 +53,23 @@ button {
   font-size: 1rem;
 }
 
+
+
 nav {
   background-color: $primary-color;
   color: $text-color;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+  font-size: 20px;
 }
+
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 
   li {
     a {
@@ -61,9 +77,12 @@ nav {
       color: $text-color;
       font-weight: bold;
       transition: color 0.3s;
+      padding: 1rem;
+      border-radius: 0.4rem;
 
       &:hover {
         color: $accent-color;
+        background-color: rgb(7, 38, 236);
       }
     }
   }
@@ -85,19 +104,27 @@ img {
 }
 
 .purple-dog {
-margin-left: 20px;
-margin-right: 20px;
+margin-left: 5rem;
+margin-bottom: 6rem;
 }
 
 .green-dog {
-  margin: 10px;
+  margin: 5rem;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.wrapper {
-  max-width: 1200px; /* Begrenze die Breite, z. B. auf 1200px */
-  margin: 0 auto;    /* Zentriert den Wrapper */
-  padding: 0 20px;   /* Optional: Innenabstand für kleinere Bildschirme */
-}
+
+.welcome {
+    max-width: 1000px;
+      margin: 3rem; 
+      background-color: white;
+      padding: 2rem;
+      border-radius: 2rem;   
+      letter-spacing: 0.1rem;
+      line-height: 1.5; 
+    }
+
 
 footer {
   background-color: $secondary-color;
@@ -119,4 +146,11 @@ footer {
   .form-container {
     padding: 1rem;
   }
+}
+
+.dog-headline {
+  margin-left: 4.5rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 3rem; 
 }
